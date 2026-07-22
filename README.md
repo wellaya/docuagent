@@ -153,13 +153,16 @@ streamlit run streamlit_app.py
 
 ### 5. Test it
 
-A sample multi-page test PDF (`sample_it_policy.pdf`) is included in `docs/sample-data/` — it has headings, a table, and FAQ-style content, useful for exercising every stage of the pipeline (layout extraction, table parsing, and RAG grounding).
+A sample multi-page test PDF (`sample_it_policy.pdf`) is included in `tests/sample/` — it has headings, a table, and FAQ-style content, useful for exercising every stage of the pipeline (layout extraction, table parsing, and RAG grounding).
 
 Try:
 - Upload the PDF via the Streamlit UI or `POST /ingest`
 - Ask: *"What is the maximum home internet reimbursement?"* → should answer $45 and reference page 2
 - Ask: *"What monitor model is provided to remote employees?"* → validates table extraction specifically
 - Ask: *"Can I access customer data from my personal laptop?"* → validates security-section retrieval
+
+<img width="1672" height="952" alt="image" src="https://github.com/user-attachments/assets/5923b82f-19ed-443d-9551-aec6babce67e" />
+
 
 ## Running tests
 
