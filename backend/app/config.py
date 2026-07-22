@@ -12,7 +12,7 @@ class Settings:
     speech_region = os.getenv("AZURE_SPEECH_REGION", "eastus")
     contentsafety_endpoint = os.getenv("AZURE_CONTENTSAFETY_ENDPOINT")
     foundry_endpoint = os.getenv("AZURE_FOUNDRY_ENDPOINT")
-    foundry_deployment = os.getenv("AZURE_FOUNDRY_DEPLOYMENT", "gpt-4o-mini")
+    foundry_deployment = os.getenv("AZURE_FOUNDRY_DEPLOYMENT", "gpt-5.4-mini")
 
 settings = Settings()
 credential = DefaultAzureCredential()
