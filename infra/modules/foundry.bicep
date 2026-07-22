@@ -1,7 +1,7 @@
 param name string
 param location string
-param modelName string = 'gpt-4o-mini'
-param modelVersion string = '2024-07-18'
+param modelName string = 'gpt-5.4-mini'
+param modelVersion string = '2026-03-17'
 param modelCapacity int = 10
 
 resource foundry 'Microsoft.CognitiveServices/accounts@2026-05-01' = {
@@ -20,7 +20,7 @@ resource deployment 'Microsoft.CognitiveServices/accounts/deployments@2026-05-01
   parent: foundry
   name: modelName
   sku: {
-    name: 'Standard'
+    name: 'GlobalStandard'
     capacity: modelCapacity
   }
   properties: {
