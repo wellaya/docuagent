@@ -7,8 +7,9 @@ token_provider = get_bearer_token_provider(credential, "https://cognitiveservice
 client = AzureOpenAI(
     azure_endpoint=settings.foundry_endpoint,
     azure_ad_token_provider=token_provider,
-    api_version="2026-03-17",
+    api_version="2025-04-01-preview",
 )
+
 
 def chunk_text(text: str, max_tokens: int = 400) -> list[str]:
     words = text.split()
