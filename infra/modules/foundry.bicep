@@ -4,7 +4,7 @@ param modelName string = 'gpt-4o-mini'
 param modelVersion string = '2024-07-18'
 param modelCapacity int = 10
 
-resource foundry 'Microsoft.CognitiveServices/accounts@2024-10-01' = {
+resource foundry 'Microsoft.CognitiveServices/accounts@2026-05-01' = {
   name: name
   location: location
   kind: 'AIServices'
